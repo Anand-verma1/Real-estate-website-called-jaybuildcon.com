@@ -1,0 +1,232 @@
+.navlink {
+  position: relative;
+  text-decoration: none;
+  color: #cecece;
+  scale: 1;
+  transition: color 0.3s ease;
+}
+
+.navlink::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ebebeb;
+  transition: width 0.5s ease;
+}
+
+.navlink:hover::before {
+  width: 100%;
+}
+
+.navlink:hover {
+  color: #ebebeb;
+  scale: 1.1;
+  transition: 0.5s ease-out;
+  /* Change text color on hover */
+}
+
+.navlink-dark {
+  position: relative;
+  text-decoration: none;
+  color: #333333;
+  scale: 1;
+  transition: color 0.3s ease;
+}
+
+.navlink-dark::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #050505;
+  transition: width 0.5s ease;
+}
+
+.navlink-dark:hover::before {
+  width: 100%;
+}
+
+.navlink-dark:hover {
+  color: #050505;
+  scale: 1.1;
+  transition: 0.5s ease-out;
+  /* Change text color on hover */
+}
+
+.frost-glass {
+  /* position: relative; */
+  /* width: 300px; */
+  /* Adjust width as needed */
+  /* height: 100px; */
+  /* Adjust height as needed */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  /* Adjust blur strength as needed */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.carousel-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Adjust as needed */
+}
+
+.carousel-container .carousel {
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity as needed */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1,
+.overlay p {
+  color: white;
+}
+
+.container-overlay {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  /* Adjust blur strength as needed */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+  /* White shadow */
+}
+
+.center-heading {
+  width: 100%;
+  color: rgb(203, 202, 204);
+  /* margin: 50px 0px 50px 0px; */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  /* Text shadow */
+}
+
+.glow-text {
+  color: rgb(203, 202, 204);
+  /* margin: 50px 0px 50px 0px; */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  /* Text shadow */
+}
+
+.search-form {
+  text-align: center;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group input {
+  border-radius: 50px 0 0 50px !important;
+  border: none;
+}
+
+.input-group button {
+  border-radius: 0 50px 50px 0 !important;
+  border: None;
+}
+
+.searchbtn {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.searchbtn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.property-section {
+  z-index: 0;
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.95) 100%), url('assets/images/s2.jpg');
+}
+
+.aboutus-bg {
+  z-index: 0;
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.94) 0%, rgba(255, 255, 255, 0.96) 10%), rgba(255, 255, 255, 0.98) 20% url('assets/images/s2.jpg');
+}
+
+.footer-bg {
+  z-index: 0;
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.98) 0%, rgba(255, 255, 255, 1) 50%), url('assets/images/s2.jpg');
+}
+
+.mobile-view {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.95) 100%), url('assets/images/s2.jpg');
+}
+
+.mobile-btn {
+  background-image: linear-gradient(90deg, rgb(0, 157, 255, 0.9) 0%, rgba(0, 7, 209, 0.9) 100%);
+  color: #ebebeb;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+}
+
+.designe-line {
+  height: 2px;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(73, 136, 255, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+.icon-image {
+  width: 48px;  /* Adjust as necessary */
+  height: 48px; /* Adjust as necessary */
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .icon-image {
+      width: 48px;
+      height: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .icon-image {
+      width: 48px;
+      height: 48px;
+  }
+}
